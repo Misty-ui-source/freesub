@@ -42,7 +42,10 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/"
+        "path": "/",
+        "headers": {
+          "Host": "82259754d625.oylfmxz.cn"
+        }
       }
     },
     {
