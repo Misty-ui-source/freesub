@@ -63,6 +63,8 @@ SOURCE_URLS = [
     "https://raw.githubusercontent.com/freefq/free/master/v2",
     "https://open.heleimail.workers.dev/",
     "https://www.ermao.net/sub/v2ray/ermao.net",
+    "https://github.com/proxifly/free-proxy-list/blob/main/proxies/all/data.txt",
+    "https://github.com/ProxyScrape/free-proxy-list/blob/main/proxies/all/data.txt",
 ]
 
 OUTPUT_DIR = "output"
