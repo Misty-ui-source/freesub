@@ -28,7 +28,7 @@ proxies:
   servername: dzen.ru
   client-fingerprint: chrome
 - name: 🇦🇪 阿联酋 (UAE) 03
-  server: 85.204.107.177
+  server: 85.204.107.181
   port: 8080
   udp: true
   type: hysteria2
@@ -36,7 +36,19 @@ proxies:
   sni: hopp-romania-new.roxa.org
   skip-cert-verify: false
 - name: 🇦🇪 阿联酋 (UAE) 04
-  server: 84.235.244.108
+  server: 31.58.181.88
+  port: 8443
+  udp: true
+  type: vless
+  uuid: a7ab9b00-42a1-4943-abba-096590d1edd0
+  flow: xtls-rprx-vision
+  tls: true
+  reality-opts:
+    public-key: AERbWB2uslqIzm1hSlOZZEH3Y9qg_zlWRRyLfh97kXc
+  servername: tradingview.com
+  client-fingerprint: firefox
+- name: 🇦🇪 阿联酋 (UAE) 05
+  server: uae.unixzone.us
   port: 22573
   udp: true
   type: vless
@@ -55,6 +67,7 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -64,5 +77,6 @@ proxy-groups:
   - 🇦🇪 阿联酋 (UAE) 02
   - 🇦🇪 阿联酋 (UAE) 03
   - 🇦🇪 阿联酋 (UAE) 04
+  - 🇦🇪 阿联酋 (UAE) 05
 rules:
 - MATCH,PROXIES

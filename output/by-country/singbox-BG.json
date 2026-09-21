@@ -4,22 +4,15 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
-      "tag": "🌐 其他地区 (Other) 01",
-      "server": "104.16.72.41",
-      "server_port": 443,
-      "password": "humanity",
+      "type": "vless",
+      "tag": "🇧🇬 保加利亚 (Bulgaria) 01",
+      "server": "192.145.31.5",
+      "server_port": 8443,
+      "uuid": "9f73cf9a-c68f-4e6d-90f0-e66b64f52f8a",
       "tls": {
         "enabled": true,
-        "server_name": "www.calmlunch.com",
-        "insecure": false
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/assignment",
-        "headers": {
-          "Host": "www.calmlunch.com"
-        }
+        "server_name": "neth9.lunariai.ru",
+        "insecure": true
       }
     },
     {
@@ -27,14 +20,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🌐 其他地区 (Other) 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🌐 其他地区 (Other) 01"
+        "🇧🇬 保加利亚 (Bulgaria) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
