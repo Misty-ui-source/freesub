@@ -4,25 +4,22 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01",
-      "server": "104.25.155.45",
+      "type": "vmess",
+      "tag": "🇹🇼 中国台湾 (Taiwan) 01 (家宽)",
+      "server": "654168416355441.oylfmxz.cn",
       "server_port": 443,
-      "uuid": "50414e45-4c5f-5a45-5553-4eef5adc237a",
+      "uuid": "d90e4077-bc7e-414d-a650-70bf1baae4d6",
+      "security": "auto",
       "tls": {
         "enabled": true,
-        "server_name": "r5zenrelur2s.pqzdileiu8es.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "server_name": "654168416355441.oylfmxz.cn",
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/stream/PANEL_ZEUS/4eef5adc237a/loc-1",
+        "path": "/",
         "headers": {
-          "Host": "r5zenrelur2s.pqzdileiu8es.workers.dev"
+          "Host": "654168416355441.oylfmxz.cn"
         }
       }
     },
@@ -31,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇺🇿 乌兹别克斯坦 (Uzbekistan) 01"
+        "🇹🇼 中国台湾 (Taiwan) 01 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
