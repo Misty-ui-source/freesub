@@ -4,22 +4,34 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇯🇵 日本 (Japan) 01 (家宽)
-  server: 84.22.150.39
-  port: 7443
+- name: 🇺🇸 美国 (United States) 01 (家宽)
+  server: 172.64.158.146
+  port: 8080
   udp: true
   type: vless
-  uuid: 5cc814de-2bbb-4409-ad8c-ee841ca7bad1
-  tls: true
-  servername: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /@Marisa_kristi
+    path: /?ed=2560security=tls
     headers:
-      Host: sxyyvihkektlx4rjxsdj.pkc73phpweu4rbxbatm444.workers.dev
-- name: 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+- name: 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  port: 443
+  udp: true
+  type: vmess
+  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
+- name: 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
   server: 654168416355441.oylfmxz.cn
   port: 443
   udp: true
@@ -35,35 +47,21 @@ proxies:
     path: /
     headers:
       Host: 654168416355441.oylfmxz.cn
-- name: 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
-  server: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  port: 443
-  udp: true
-  type: vmess
-  uuid: d90e4077-bc7e-414d-a650-70bf1baae4d6
-  alterId: 0
-  cipher: auto
-  tls: true
-  servername: dee2309db4944c248b6d4372c6641e7b.oylfmxz.cn
-  skip-cert-verify: false
-  network: ws
-  ws-opts:
-    path: /
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇯🇵 日本 (Japan) 01 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇯🇵 日本 (Japan) 01 (家宽)
-  - 🇹🇼 中国台湾 (Taiwan) 02 (家宽)
-  - 🇭🇰 中国香港 (Hong Kong) 03 (家宽)
+  - 🇺🇸 美国 (United States) 01 (家宽)
+  - 🇭🇰 中国香港 (Hong Kong) 02 (家宽)
+  - 🇹🇼 中国台湾 (Taiwan) 03 (家宽)
 rules:
 - MATCH,PROXIES
