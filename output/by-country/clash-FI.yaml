@@ -16,18 +16,13 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: safari
 - name: 🇫🇮 芬兰 (Finland) 02
-  server: 2.27.175.71
-  port: 443
+  server: iq5ny.pleiades.codes
+  port: 8443
   udp: true
-  type: vless
-  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  tls: true
-  servername: assets-fi.pleiades.codes
-  skip-cert-verify: false
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: cdn.v1.AssetService
+  type: hysteria2
+  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+  sni: iq5ny.pleiades.codes
+  skip-cert-verify: true
 - name: 🇫🇮 芬兰 (Finland) 03
   server: 31.76.80.230
   port: 8443
@@ -37,31 +32,10 @@ proxies:
   tls: true
   servername: fin.luxes.network
   skip-cert-verify: false
+  client-fingerprint: safari
   network: ws
   ws-opts:
     path: /assets
-- name: 🇫🇮 芬兰 (Finland) 04
-  server: iq5ny.pleiades.codes
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
-  sni: iq5ny.pleiades.codes
-  skip-cert-verify: true
-- name: 🇫🇮 芬兰 (Finland) 05
-  server: 92.255.79.246
-  port: 443
-  udp: true
-  type: vless
-  uuid: 8057eabc-921d-0001-9acb-80ccc6b48379
-  tls: true
-  reality-opts:
-    public-key: 8P2rVrZZ8v1q7WpYiRWnZ_nk2UI_4PqpN_DdZP91700
-  servername: supbober.mafioznik.xyz
-  client-fingerprint: firefox
-  network: grpc
-  grpc-opts:
-    grpc-service-name: Lizat
 proxy-groups:
 - name: PROXIES
   type: select
@@ -70,8 +44,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -80,7 +52,5 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 01
   - 🇫🇮 芬兰 (Finland) 02
   - 🇫🇮 芬兰 (Finland) 03
-  - 🇫🇮 芬兰 (Finland) 04
-  - 🇫🇮 芬兰 (Finland) 05
 rules:
 - MATCH,PROXIES
