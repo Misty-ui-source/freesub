@@ -26,6 +26,20 @@
     {
       "type": "vless",
       "tag": "🇨🇱 智利 (Chile) 02",
+      "server": "platform113.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform113",
+        "headers": {
+          "Host": "platform113.halalkhor.info"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇱 智利 (Chile) 03",
       "server": "platform117.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -39,7 +53,7 @@
     },
     {
       "type": "vless",
-      "tag": "🇨🇱 智利 (Chile) 03",
+      "tag": "🇨🇱 智利 (Chile) 04",
       "server": "platform109.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -58,7 +72,8 @@
         "auto",
         "🇨🇱 智利 (Chile) 01",
         "🇨🇱 智利 (Chile) 02",
-        "🇨🇱 智利 (Chile) 03"
+        "🇨🇱 智利 (Chile) 03",
+        "🇨🇱 智利 (Chile) 04"
       ]
     },
     {
@@ -67,7 +82,8 @@
       "outbounds": [
         "🇨🇱 智利 (Chile) 01",
         "🇨🇱 智利 (Chile) 02",
-        "🇨🇱 智利 (Chile) 03"
+        "🇨🇱 智利 (Chile) 03",
+        "🇨🇱 智利 (Chile) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
