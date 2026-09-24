@@ -4,28 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇹🇭 泰国 (Thailand) 01
-  server: 103.86.49.57
-  port: 80
+- name: 🇱🇻 拉脱维亚 (Latvia) 01
+  server: 185.135.86.175
+  port: 9033
   udp: true
-  type: vless
-  uuid: 3c52e091-6714-4915-949f-2149fe69951b
-  network: ws
-  ws-opts:
-    path: /ws
-    headers:
-      Host: aIs.SpEeDtEsT.nEt
+  type: ss
+  cipher: aes-256-cfb
+  password: UTJA57ypk2XKQpnm
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇱🇻 拉脱维亚 (Latvia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇹🇭 泰国 (Thailand) 01
+  - 🇱🇻 拉脱维亚 (Latvia) 01
 rules:
 - MATCH,PROXIES
