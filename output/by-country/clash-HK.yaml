@@ -13,22 +13,6 @@ proxies:
   alterId: 0
   cipher: auto
 - name: 🇭🇰 中国香港 (Hong Kong) 02
-  server: 89.223.95.77
-  port: 22324
-  udp: true
-  type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-  alterId: 0
-  cipher: auto
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 4eedcde6-d16a-11ef-973a-f23c913c8d2b
-  sni: e6b91583-tm96o0-tnhquc-1j0a4.hk3.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 34.92.145.185
   port: 443
   udp: true
@@ -40,37 +24,60 @@ proxies:
     short-id: 64b3f192fc0669e1
   servername: www.cloudflare.com
   client-fingerprint: firefox
-- name: 🇭🇰 中国香港 (Hong Kong) 05
+- name: 🇭🇰 中国香港 (Hong Kong) 03
   server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
+  sni: https://t.me/wangcai2
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: 202.146.222.89
+- name: 🇭🇰 中国香港 (Hong Kong) 04
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vk.com
+  sni: 202.146.222.29
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
-  server: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
-  port: 443
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: mz.hkychina.com
+  port: 8443
   udp: true
   type: hysteria2
-  password: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-  sni: 44577f17-tm96o0-tne5x4-1rfon.nw4.hyhuawei.com
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 08
+- name: 🇭🇰 中国香港 (Hong Kong) 06
+  server: 172.67.148.211
+  port: 443
+  udp: true
+  type: vless
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  tls: true
+  servername: 3-M19.sOutH-AfRiCA-CHANNEL.ccwU.cc
+  skip-cert-verify: false
+  client-fingerprint: chrome
+  network: ws
+  ws-opts:
+    path: /CjBjB9sn5pCvaSwScc
+    headers:
+      Host: 3-M19.SOUth-aFriCA-CHaNnel.CCWu.Cc
+- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: hk2.xiaoliyu.cyou
   port: 4433
   udp: true
   type: hysteria2
   password: 19f72087-4591-4d72-930b-2697078ec2be
   sni: hk2.xiaoliyu.cyou
+  skip-cert-verify: true
+- name: 🇭🇰 中国香港 (Hong Kong) 08
+  server: 119.246.1.143
+  port: 443
+  udp: true
+  type: trojan
+  password: BxceQaOe
+  sni: t.me
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09
   server: 47.240.80.220
@@ -80,38 +87,6 @@ proxies:
   password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
   sni: vpn.12169.top
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 202.146.222.29
-  port: 443
-  udp: true
-  type: hysteria2
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: https%3a%2f%2ft.me%2fwangcai2%d1%80%d2%b9%d2%af
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: 2.27.109.179
-  port: 45464
-  udp: true
-  type: trojan
-  password: XuMweB2PWs
-  sni: 2.27.109.179.sslip.io
-  skip-cert-verify: false
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: 119.246.1.143
-  port: 443
-  udp: true
-  type: trojan
-  password: BxceQaOe
-  sni: t.me
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 13
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
   type: select
@@ -126,10 +101,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07
   - 🇭🇰 中国香港 (Hong Kong) 08
   - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
-  - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -144,9 +115,5 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 07
   - 🇭🇰 中国香港 (Hong Kong) 08
   - 🇭🇰 中国香港 (Hong Kong) 09
-  - 🇭🇰 中国香港 (Hong Kong) 10
-  - 🇭🇰 中国香港 (Hong Kong) 11
-  - 🇭🇰 中国香港 (Hong Kong) 12
-  - 🇭🇰 中国香港 (Hong Kong) 13
 rules:
 - MATCH,PROXIES
