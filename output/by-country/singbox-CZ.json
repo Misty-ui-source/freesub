@@ -4,28 +4,45 @@
   },
   "outbounds": [
     {
-      "type": "trojan",
+      "type": "vless",
       "tag": "🇨🇿 捷克 (Czech) 01",
-      "server": "172.67.166.189",
+      "server": "194.87.59.106",
+      "server_port": 2085,
+      "uuid": "a44b015b-1b2b-4f3e-b236-79634f674b2d",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 02",
+      "server": "153.76.185.187",
+      "server_port": 3090,
+      "uuid": "7b219b61-9cc6-49ca-bf2d-5d5ec7960256",
+      "transport": {
+        "type": "grpc",
+        "service_name": "vless"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇨🇿 捷克 (Czech) 03",
+      "server": "gerwai1488.vvzzkontaktezzvv.garden",
       "server_port": 443,
-      "password": "f88f080e9b4f66c6",
+      "uuid": "4bdeee92-97e8-414d-bef6-ec1d5e2ab73b",
+      "flow": "xtls-rprx-vision",
       "tls": {
         "enabled": true,
-        "server_name": "Open-39.AVL-a47261.WorKErS.DeV",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "gerwai1488.vvzzkontaktezzvv.garden",
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/tr/SpBOfUvsW3IMjIayEnU4fVTehv9gf4?ed=2560",
-        "headers": {
-          "Host": "open-39.avl-a47261.workers.dev"
+          "fingerprint": "firefox"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "EYfpgja4VjpLUnWHtDJQ1XZk6xL5j4rXwf80Sw6keV0",
+          "short_id": "0c13e8822e7f58aa"
         }
       }
     },
@@ -34,14 +51,18 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02",
+        "🇨🇿 捷克 (Czech) 03"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇨🇿 捷克 (Czech) 01"
+        "🇨🇿 捷克 (Czech) 01",
+        "🇨🇿 捷克 (Czech) 02",
+        "🇨🇿 捷克 (Czech) 03"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
