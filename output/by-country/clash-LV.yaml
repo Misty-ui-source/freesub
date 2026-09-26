@@ -13,18 +13,18 @@ proxies:
   password: UTJA57ypk2XKQpnm
 - name: 🇱🇻 拉脱维亚 (Latvia) 02
   server: 185.135.86.175
-  port: 9036
-  udp: true
-  type: ss
-  cipher: aes-256-cfb
-  password: hbtvgUz5uNYyB3Rf
-- name: 🇱🇻 拉脱维亚 (Latvia) 03
-  server: 185.135.86.175
   port: 9017
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: HAVAdE3nXhqA5nHp
+- name: 🇱🇻 拉脱维亚 (Latvia) 03
+  server: 185.135.86.175
+  port: 9036
+  udp: true
+  type: ss
+  cipher: aes-256-cfb
+  password: hbtvgUz5uNYyB3Rf
 proxy-groups:
 - name: PROXIES
   type: select
