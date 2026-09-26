@@ -4,23 +4,21 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇷 IR 01",
-      "server": "62.60.245.148",
+      "type": "trojan",
+      "tag": "🌐 其他地区 (Other) 01",
+      "server": "172.64.152.23",
       "server_port": 443,
-      "uuid": "eec2f6a7-c10f-43b0-b133-61f9bf9bbc27",
-      "flow": "xtls-rprx-vision",
+      "password": "humanity",
       "tls": {
         "enabled": true,
-        "server_name": "amazon.de",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "ios"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "G8SING6Ibc_igZ5vI5578fXCT_mBMRuq_o8_Ymnj2SQ",
-          "short_id": "eba1498e012ef580"
+        "server_name": "www.calmlunch.com",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/assignment",
+        "headers": {
+          "Host": "www.calmlunch.com"
         }
       }
     },
@@ -29,14 +27,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇷 IR 01"
+        "🌐 其他地区 (Other) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇷 IR 01"
+        "🌐 其他地区 (Other) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
