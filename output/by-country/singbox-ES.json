@@ -4,24 +4,12 @@
   },
   "outbounds": [
     {
-      "type": "vless",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01",
-      "server": "212.227.235.66",
-      "server_port": 2053,
-      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
-      "tls": {
-        "enabled": true,
-        "server_name": "www.apple.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
-          "short_id": "29e8dcd2b37aaa7f"
-        }
-      }
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
     },
     {
       "type": "shadowsocks",
@@ -32,12 +20,24 @@
       "password": "qItG8SueYQcP"
     },
     {
-      "type": "shadowsocks",
+      "type": "vless",
       "tag": "🇪🇸 西班牙 (Spain) 03",
-      "server": "vpnhub.armanspeed.ir",
-      "server_port": 1080,
-      "method": "chacha20-ietf-poly1305",
-      "password": "GiPvSPgJGzrONPTcFqzioZd_PeJGMP0W"
+      "server": "212.227.235.66",
+      "server_port": 2053,
+      "uuid": "ead0dd61-d398-40ad-80d6-a0e1e516d7d3",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.apple.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "random"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "7Y6Xb5Ql_03K25x8yKUSOKI2JTOMyv2nyCcFza90uxk",
+          "short_id": "29e8dcd2b37aaa7f"
+        }
+      }
     },
     {
       "type": "vless",
@@ -61,14 +61,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 05",
-      "server": "vpnhub.armanspeed.ir",
-      "server_port": 64628,
-      "uuid": "80356757-2cc5-4eac-901c-af235415436c",
-      "security": "auto"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -76,8 +68,7 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 04"
       ]
     },
     {
@@ -87,8 +78,7 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05"
+        "🇪🇸 西班牙 (Spain) 04"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
