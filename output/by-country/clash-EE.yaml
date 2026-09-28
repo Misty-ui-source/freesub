@@ -31,6 +31,14 @@ proxies:
     headers:
       Host: estproxy4.lockdwn.com
 - name: 🇪🇪 爱沙尼亚 (Estonia) 03
+  server: 109.206.241.10
+  port: 449
+  udp: true
+  type: trojan
+  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
+  sni: 109.206.241.10
+  skip-cert-verify: true
+- name: 🇪🇪 爱沙尼亚 (Estonia) 04
   server: 94.183.170.135
   port: 8443
   udp: true
@@ -40,14 +48,6 @@ proxies:
   servername: estproxy4.lockdwn.com
   skip-cert-verify: false
   client-fingerprint: firefox
-- name: 🇪🇪 爱沙尼亚 (Estonia) 04
-  server: 109.206.241.10
-  port: 449
-  udp: true
-  type: trojan
-  password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
-  sni: russiapower.accesscam.org
-  skip-cert-verify: true
 - name: 🇪🇪 爱沙尼亚 (Estonia) 05
   server: 94.183.170.65
   port: 8081
@@ -59,6 +59,13 @@ proxies:
     path: /ws/generate
     headers:
       Host: hys2.arkonsoft.top
+- name: 🇪🇪 爱沙尼亚 (Estonia) 06
+  server: 80.97.27.106
+  port: 114
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: 9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj
 proxy-groups:
 - name: PROXIES
   type: select
@@ -69,6 +76,7 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
   - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -79,5 +87,6 @@ proxy-groups:
   - 🇪🇪 爱沙尼亚 (Estonia) 03
   - 🇪🇪 爱沙尼亚 (Estonia) 04
   - 🇪🇪 爱沙尼亚 (Estonia) 05
+  - 🇪🇪 爱沙尼亚 (Estonia) 06
 rules:
 - MATCH,PROXIES

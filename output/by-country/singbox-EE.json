@@ -42,8 +42,20 @@
       }
     },
     {
-      "type": "vless",
+      "type": "trojan",
       "tag": "🇪🇪 爱沙尼亚 (Estonia) 03",
+      "server": "109.206.241.10",
+      "server_port": 449,
+      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
+      "tls": {
+        "enabled": true,
+        "server_name": "109.206.241.10",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
       "server": "94.183.170.135",
       "server_port": 8443,
       "uuid": "06c4e938-2954-478f-a870-ca1b163e30e9",
@@ -55,18 +67,6 @@
           "enabled": true,
           "fingerprint": "firefox"
         }
-      }
-    },
-    {
-      "type": "trojan",
-      "tag": "🇪🇪 爱沙尼亚 (Estonia) 04",
-      "server": "109.206.241.10",
-      "server_port": 449,
-      "password": "oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1",
-      "tls": {
-        "enabled": true,
-        "server_name": "russiapower.accesscam.org",
-        "insecure": true
       }
     },
     {
@@ -84,6 +84,14 @@
       }
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇪 爱沙尼亚 (Estonia) 06",
+      "server": "80.97.27.106",
+      "server_port": 114,
+      "method": "chacha20-ietf-poly1305",
+      "password": "9binmVT58Wnr6vNzxu_JmpzEW6i-FgAj"
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -92,7 +100,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
         "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 05",
+        "🇪🇪 爱沙尼亚 (Estonia) 06"
       ]
     },
     {
@@ -103,7 +112,8 @@
         "🇪🇪 爱沙尼亚 (Estonia) 02",
         "🇪🇪 爱沙尼亚 (Estonia) 03",
         "🇪🇪 爱沙尼亚 (Estonia) 04",
-        "🇪🇪 爱沙尼亚 (Estonia) 05"
+        "🇪🇪 爱沙尼亚 (Estonia) 05",
+        "🇪🇪 爱沙尼亚 (Estonia) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

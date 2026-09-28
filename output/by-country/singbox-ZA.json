@@ -22,20 +22,6 @@
     {
       "type": "vless",
       "tag": "🇿🇦 南非 (South Africa) 03",
-      "server": "platform117.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform117",
-        "headers": {
-          "Host": "platform117.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 04",
       "server": "platform106.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
@@ -49,38 +35,27 @@
     },
     {
       "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 05",
-      "server": "platform103.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform103"
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 06",
-      "server": "platform113.golnamakcert.top",
-      "server_port": 80,
-      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
-      "transport": {
-        "type": "ws",
-        "path": "/platform113",
-        "headers": {
-          "Host": "platform113.halalkhor.info"
-        }
-      }
-    },
-    {
-      "type": "vless",
-      "tag": "🇿🇦 南非 (South Africa) 07",
+      "tag": "🇿🇦 南非 (South Africa) 04",
       "server": "platform107.golnamakcert.top",
       "server_port": 80,
       "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
       "transport": {
         "type": "ws",
         "path": "/platform107"
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇿🇦 南非 (South Africa) 05",
+      "server": "platform117.golnamakcert.top",
+      "server_port": 80,
+      "uuid": "e13cf851-b4fd-413b-8d49-146e6eb8e5d4",
+      "transport": {
+        "type": "ws",
+        "path": "/platform117",
+        "headers": {
+          "Host": "platform117.halalkhor.info"
+        }
       }
     },
     {
@@ -92,9 +67,7 @@
         "🇿🇦 南非 (South Africa) 02",
         "🇿🇦 南非 (South Africa) 03",
         "🇿🇦 南非 (South Africa) 04",
-        "🇿🇦 南非 (South Africa) 05",
-        "🇿🇦 南非 (South Africa) 06",
-        "🇿🇦 南非 (South Africa) 07"
+        "🇿🇦 南非 (South Africa) 05"
       ]
     },
     {
@@ -105,9 +78,7 @@
         "🇿🇦 南非 (South Africa) 02",
         "🇿🇦 南非 (South Africa) 03",
         "🇿🇦 南非 (South Africa) 04",
-        "🇿🇦 南非 (South Africa) 05",
-        "🇿🇦 南非 (South Africa) 06",
-        "🇿🇦 南非 (South Africa) 07"
+        "🇿🇦 南非 (South Africa) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
