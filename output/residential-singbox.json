@@ -6,14 +6,23 @@
     {
       "type": "vless",
       "tag": "🇺🇸 美国 (United States) 01 (家宽)",
-      "server": "104.18.47.113",
-      "server_port": 8880,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
+      "server": "172.64.155.209",
+      "server_port": 8443,
+      "uuid": "4ff70740-8c80-48ae-985f-2afe4924e908",
+      "tls": {
+        "enabled": true,
+        "server_name": "pubb.clnahanpnln.workers.dev",
+        "insecure": false,
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        }
+      },
       "transport": {
         "type": "ws",
-        "path": "/?ed=2560security=tls ",
+        "path": "/sync",
         "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
+          "Host": "pubb.clnahanpnln.workers.dev"
         }
       }
     },
@@ -38,12 +47,25 @@
       }
     },
     {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (家宽)",
+      "server": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "40fb1315-191a-11ed-b0ca-f23c91cfbbc9",
+      "tls": {
+        "enabled": true,
+        "server_name": "fa86aac8-tmeqo0-0-1imi4.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
         "🇺🇸 美国 (United States) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ]
     },
     {
@@ -51,7 +73,8 @@
       "tag": "auto",
       "outbounds": [
         "🇺🇸 美国 (United States) 01 (家宽)",
-        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)"
+        "🇹🇼 中国台湾 (Taiwan) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (家宽)"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
