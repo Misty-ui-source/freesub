@@ -5,27 +5,21 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇮🇶 IQ 01",
-      "server": "172.67.203.158",
+      "tag": "🇨🇱 智利 (Chile) 01",
+      "server": "34.176.187.219",
       "server_port": 443,
-      "uuid": "911b84e1-d046-4fbf-bfc0-c168791115ef",
+      "uuid": "ad5325f8-f0b3-41c4-a561-113529b60e70",
       "tls": {
         "enabled": true,
-        "server_name": "12YGbaE0K3gN0z0f.mEhrsHADHaDdadI8.WorkerS.DEv",
-        "insecure": false,
-        "alpn": [
-          "http/1.1"
-        ],
+        "server_name": "www.cloudflare.com",
         "utls": {
           "enabled": true,
           "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/vl/YCNmDFbqMu7cgTzgsfEWGtBD8kR",
-        "headers": {
-          "Host": "12ygbae0k3gn0z0f.mehrshadhaddadi8.workers.dev"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "HnHVuSObMrldWGzq1-Eb93fwgu6QQRp6H0_8LX3ikDc",
+          "short_id": "2c2d919f5183d0b7"
         }
       }
     },
@@ -34,14 +28,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇶 IQ 01"
+        "🇨🇱 智利 (Chile) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇶 IQ 01"
+        "🇨🇱 智利 (Chile) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
