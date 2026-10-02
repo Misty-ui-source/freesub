@@ -4,16 +4,73 @@
   },
   "outbounds": [
     {
-      "type": "shadowsocks",
+      "type": "vmess",
       "tag": "🇪🇸 西班牙 (Spain) 01",
+      "server": "66.163.118.73",
+      "server_port": 22324,
+      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
+      "security": "auto"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "WSyL4XTwNsdv"
     },
     {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 03",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
+    },
+    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 02",
+      "tag": "🇪🇸 西班牙 (Spain) 04",
+      "server": "46.28.71.247",
+      "server_port": 443,
+      "uuid": "12c53e32-e589-47d6-b857-e4132294f767",
+      "flow": "xtls-rprx-vision",
+      "tls": {
+        "enabled": true,
+        "server_name": "www.cloudflare.com",
+        "utls": {
+          "enabled": true,
+          "fingerprint": "chrome"
+        },
+        "reality": {
+          "enabled": true,
+          "public_key": "v4MuZIvFrTPT5GHMSaPryUAbIZlLstmsUTzmC1E-JTE",
+          "short_id": "0dfc23fe80778c00"
+        }
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "server": "mygptagent.org",
+      "server_port": 443,
+      "uuid": "03fcc618-b93d-6796-6aed-8a38c975d581",
+      "security": "auto",
+      "tls": {
+        "enabled": true,
+        "server_name": "mygptagent.org",
+        "insecure": false
+      },
+      "transport": {
+        "type": "ws",
+        "path": "/linkvws",
+        "headers": {
+          "Host": "mygptagent.org"
+        }
+      }
+    },
+    {
+      "type": "vless",
+      "tag": "🇪🇸 西班牙 (Spain) 06",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -32,22 +89,6 @@
       }
     },
     {
-      "type": "vmess",
-      "tag": "🇪🇸 西班牙 (Spain) 03",
-      "server": "66.163.118.73",
-      "server_port": 22324,
-      "uuid": "04621bae-ab36-11ec-b909-0242ac120002",
-      "security": "auto"
-    },
-    {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 04",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -55,7 +96,9 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04"
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05",
+        "🇪🇸 西班牙 (Spain) 06"
       ]
     },
     {
@@ -65,7 +108,9 @@
         "🇪🇸 西班牙 (Spain) 01",
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
-        "🇪🇸 西班牙 (Spain) 04"
+        "🇪🇸 西班牙 (Spain) 04",
+        "🇪🇸 西班牙 (Spain) 05",
+        "🇪🇸 西班牙 (Spain) 06"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

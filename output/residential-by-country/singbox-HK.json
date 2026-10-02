@@ -1,0 +1,67 @@
+{
+  "log": {
+    "level": "warn"
+  },
+  "outbounds": [
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+      "server": "a6edadd7-tmm5c0-txfm0f-1qxa1.hk3.hyhuawei.com",
+      "server_port": 443,
+      "password": "f609abb4-ed17-11ee-9fa2-f23c9164ca5d",
+      "tls": {
+        "enabled": true,
+        "server_name": "a6edadd7-tmm5c0-txfm0f-1qxa1.hk3.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "hysteria2",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+      "server": "3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com",
+      "server_port": 443,
+      "password": "f5c0eda2-4b97-11ed-bd7c-f23c913c8d2b",
+      "tls": {
+        "enabled": true,
+        "server_name": "3ccb74ed-tmm5c0-ttyjoe-ieln.nw4.hyhuawei.com",
+        "insecure": true
+      }
+    },
+    {
+      "type": "vmess",
+      "tag": "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)",
+      "server": "zfd-hkv1.kunlun01dns.com",
+      "server_port": 16115,
+      "uuid": "0802ac03-7973-39ef-a019-ba02de6c01e1",
+      "security": "auto"
+    },
+    {
+      "type": "selector",
+      "tag": "select",
+      "outbounds": [
+        "auto",
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)"
+      ]
+    },
+    {
+      "type": "urltest",
+      "tag": "auto",
+      "outbounds": [
+        "🇭🇰 中国香港 (Hong Kong) 01 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 02 (家宽)",
+        "🇭🇰 中国香港 (Hong Kong) 03 (移动家宽)"
+      ],
+      "url": "https://www.gstatic.com/generate_204"
+    },
+    {
+      "type": "direct",
+      "tag": "direct"
+    },
+    {
+      "type": "block",
+      "tag": "block"
+    }
+  ]
+}
