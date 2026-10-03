@@ -4,25 +4,24 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇨🇿 捷克 (Czech) 01
-  server: 153.76.190.41
-  port: 8443
+- name: 🇸🇨 塞舌尔 (Seychelles) 01
+  server: u5c9wb.5tencent.asia
+  port: 22033
   udp: true
-  type: hysteria2
-  password: 3a92b39a-5f02-415e-a908-783ec320e83f
-  sni: speedtestmark.com
-  skip-cert-verify: true
+  type: ss
+  cipher: aes-256-gcm
+  password: ce2205df-f330-4779-a584-13f6bfc6adb6
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇨🇿 捷克 (Czech) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇨🇿 捷克 (Czech) 01
+  - 🇸🇨 塞舌尔 (Seychelles) 01
 rules:
 - MATCH,PROXIES

@@ -4,25 +4,26 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇮🇹 意大利 (Italy) 01",
-      "server": "204.216.216.23",
-      "server_port": 10086,
-      "uuid": "9f0285ee-20ca-4953-bcdb-86a920652923"
+      "type": "shadowsocks",
+      "tag": "🇳🇴 挪威 (Norway) 01",
+      "server": "185.213.23.63",
+      "server_port": 990,
+      "method": "chacha20-ietf-poly1305",
+      "password": "ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44="
     },
     {
       "type": "selector",
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇮🇹 意大利 (Italy) 01"
+        "🇳🇴 挪威 (Norway) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇮🇹 意大利 (Italy) 01"
+        "🇳🇴 挪威 (Norway) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
