@@ -5,6 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇵🇭 菲律宾 (Philippines) 01
+  server: 104.21.93.182
+  port: 443
+  udp: true
+  type: vless
+  uuid: 7907dd24-e3f8-4151-a1b2-2608ac4b322e
+  tls: true
+  servername: milan.gorbeh3.ir
+  skip-cert-verify: false
+  client-fingerprint: firefox
+- name: 🇵🇭 菲律宾 (Philippines) 02
   server: 149.104.109.252
   port: 8882
   udp: true
@@ -17,11 +27,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇵🇭 菲律宾 (Philippines) 01
+  - 🇵🇭 菲律宾 (Philippines) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇵🇭 菲律宾 (Philippines) 01
+  - 🇵🇭 菲律宾 (Philippines) 02
 rules:
 - MATCH,PROXIES
