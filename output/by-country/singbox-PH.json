@@ -4,24 +4,8 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇵🇭 菲律宾 (Philippines) 01",
-      "server": "104.21.93.182",
-      "server_port": 443,
-      "uuid": "7907dd24-e3f8-4151-a1b2-2608ac4b322e",
-      "tls": {
-        "enabled": true,
-        "server_name": "milan.gorbeh3.ir",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "firefox"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇵🇭 菲律宾 (Philippines) 02",
+      "tag": "🇵🇭 菲律宾 (Philippines) 01",
       "server": "149.104.109.252",
       "server_port": 8882,
       "method": "aes-256-gcm",
@@ -32,16 +16,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇵🇭 菲律宾 (Philippines) 01",
-        "🇵🇭 菲律宾 (Philippines) 02"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇵🇭 菲律宾 (Philippines) 01",
-        "🇵🇭 菲律宾 (Philippines) 02"
+        "🇵🇭 菲律宾 (Philippines) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
