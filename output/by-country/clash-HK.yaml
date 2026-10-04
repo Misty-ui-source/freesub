@@ -5,53 +5,43 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇭🇰 中国香港 (Hong Kong) 01
+  server: telegram.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: pno0e2keji2gsfea
+- name: 🇭🇰 中国香港 (Hong Kong) 02
   server: sth.free-outline.giize.com
   port: 1081
   udp: true
   type: ss
   cipher: chacha20-ietf-poly1305
   password: n7vuxdsmlqnrbxqe
-- name: 🇭🇰 中国香港 (Hong Kong) 02
+- name: 🇭🇰 中国香港 (Hong Kong) 03
+  server: telegramx.khp25.com
+  port: 1080
+  udp: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: m5nsedvdczx6x06e
+- name: 🇭🇰 中国香港 (Hong Kong) 04
   server: 202.146.222.89
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: 202.146.222.89
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 03
-  server: 202.146.222.174
+- name: 🇭🇰 中国香港 (Hong Kong) 05
+  server: 202.146.222.29
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: t.me
+  sni: https%3a%2f%2ft.me%2fwangcai2%ef%a3%bf%c3%bc%c3%a1
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 04
-  server: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
-  sni: 971746e8-tmm5c0-trpvht-1ey07.nw4.hyhuawei.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 05
-  server: e96c3741-tmm5c0-tw2fdz-1s824.hk3.hyhuawei.com
-  port: 443
-  udp: true
-  type: hysteria2
-  password: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-  sni: e96c3741-tmm5c0-tw2fdz-1s824.hk3.hyhuawei.com
-  skip-cert-verify: false
 - name: 🇭🇰 中国香港 (Hong Kong) 06
-  server: mz.hkychina.com
-  port: 8443
-  udp: true
-  type: hysteria2
-  password: HysTeria2026!Proxy
-  sni: mz.hkychina.com
-  skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 07
   server: 185.244.208.69
   port: 443
   udp: true
@@ -59,55 +49,86 @@ proxies:
   password: UX82473651
   sni: strong-haddock.rooster465.autos
   skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 07
+  server: ru1.xiaoliyu.cyou
+  port: 18333
+  udp: true
+  type: hysteria2
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  sni: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 08
-  server: 202.146.222.29
+  server: 202.146.222.174
   port: 443
   udp: true
   type: hysteria2
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: "https://t.me/wangcai2ð\x9F\x87¨ð\x9F\x87³"
+  sni: https%3a%2f%2ft.me%2fwangcai2%f0%9f%87%a8%f0%9f%87%b3
   skip-cert-verify: true
 - name: 🇭🇰 中国香港 (Hong Kong) 09
-  server: hk2.xiaoliyu.cyou
-  port: 4433
+  server: 194.99.79.26
+  port: 443
+  udp: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: aksai.org
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /linkvws
+    headers:
+      Host: aksai.org
+- name: 🇭🇰 中国香港 (Hong Kong) 10
+  server: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
+  port: 443
   udp: true
   type: hysteria2
-  password: 19f72087-4591-4d72-930b-2697078ec2be
-  sni: hk2.xiaoliyu.cyou
+  password: 6857f1bc-f27b-11ea-87ad-f23c913c8d2b
+  sni: dc5d989c-tmm5c0-tzxeoy-hns7.nw4.hyhuawei.com
   skip-cert-verify: true
-- name: 🇭🇰 中国香港 (Hong Kong) 10
-  server: 34.96.188.243
-  port: 443
-  udp: true
-  type: vless
-  uuid: 75d38591-267e-4d89-98bc-164f25b50880
-  tls: true
-  reality-opts:
-    public-key: HV_4dmK3rwzqhWP1yOpC1L8BObd5lpZRYTzUflsi2x4
-    short-id: 64b3f192fc0669e1
-  servername: www.cloudflare.com
-  client-fingerprint: chrome
 - name: 🇭🇰 中国香港 (Hong Kong) 11
-  server: jumpernode.site
+  server: mz.hkychina.com
+  port: 8443
+  udp: true
+  type: hysteria2
+  password: HysTeria2026!Proxy
+  sni: mz.hkychina.com
+  skip-cert-verify: false
+- name: 🇭🇰 中国香港 (Hong Kong) 12
+  server: 47.83.207.148
   port: 443
   udp: true
-  type: vless
-  uuid: 23af32ca-bea1-4a5e-bebb-04d1b1b633bc
-  flow: xtls-rprx-vision
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
   tls: true
-  reality-opts:
-    public-key: sDKrtAJk2VP_w1w7cFi2O86RdlvQ2E2An5xsRdJlgGE
-    short-id: 6d962e8d8a0dce
-  servername: p-nt-www-amazon-com-kalias.amazon.com
-  client-fingerprint: chrome
-- name: 🇭🇰 中国香港 (Hong Kong) 12
-  server: 47.240.80.220
-  port: 2052
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+- name: 🇭🇰 中国香港 (Hong Kong) 13
+  server: 47.76.44.32
+  port: 443
   udp: true
-  type: trojan
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  sni: 47.240.80.220
-  skip-cert-verify: true
+  type: vmess
+  uuid: f23bb427c1f94373876c2f43e9f790f3
+  alterId: 0
+  cipher: auto
+  tls: true
+  servername: 93ucrn4i0pffuabk.v.3dns.vip
+  skip-cert-verify: false
+  network: ws
+  ws-opts:
+    path: /ws-vmess
+    headers:
+      Host: 93ucrn4i0pffuabk.v.3dns.vip
 proxy-groups:
 - name: PROXIES
   type: select
@@ -125,6 +146,7 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -142,5 +164,6 @@ proxy-groups:
   - 🇭🇰 中国香港 (Hong Kong) 10
   - 🇭🇰 中国香港 (Hong Kong) 11
   - 🇭🇰 中国香港 (Hong Kong) 12
+  - 🇭🇰 中国香港 (Hong Kong) 13
 rules:
 - MATCH,PROXIES

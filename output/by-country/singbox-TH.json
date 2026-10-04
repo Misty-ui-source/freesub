@@ -5,24 +5,15 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇧🇾 白俄罗斯 (Belarus) 01",
-      "server": "89.125.96.75",
-      "server_port": 2053,
-      "uuid": "6c713691-3ca2-0008-ad25-113d1bed6b03",
-      "tls": {
-        "enabled": true,
-        "server_name": "wss.zazazuza.ru",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
+      "tag": "🇹🇭 泰国 (Thailand) 01",
+      "server": "103.86.49.57",
+      "server_port": 80,
+      "uuid": "3c52e091-6714-4915-949f-2149fe69951b",
       "transport": {
         "type": "ws",
-        "path": "/vpn-wss/fluxor/59011/",
+        "path": "/ws",
         "headers": {
-          "Host": "wss.zazazuza.ru"
+          "Host": "aIs.SpEeDtEsT.nEt"
         }
       }
     },
@@ -31,14 +22,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇧🇾 白俄罗斯 (Belarus) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇧🇾 白俄罗斯 (Belarus) 01"
+        "🇹🇭 泰国 (Thailand) 01"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

@@ -4,30 +4,30 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇱🇻 拉脱维亚 (Latvia) 01
-  server: latinki.pumpkinpie.study
+- name: 🇦🇶 AQ 01
+  server: 2.27.26.128
   port: 443
   udp: true
   type: vless
-  uuid: 8f6e49e6-7f03-4f10-9da9-1716158d80ed
+  uuid: 8710a337-f504-4b75-8989-224cfd803b2d
   flow: xtls-rprx-vision
   tls: true
   reality-opts:
-    public-key: wHTq_owme8N6237B37GhneBcNJQtzRdIFouRkSscgnQ
-    short-id: 40fac5d64bc6a540
-  servername: latinki.pumpkinpie.study
-  client-fingerprint: random
+    public-key: HKkU-5UanGjWdmX8E-EGulXMk1BnidkFsVveyyOlTg8
+    short-id: 90f9d05bf95cb335
+  servername: aq-1.global-cdn.org
+  client-fingerprint: safari
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇱🇻 拉脱维亚 (Latvia) 01
+  - 🇦🇶 AQ 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇱🇻 拉脱维亚 (Latvia) 01
+  - 🇦🇶 AQ 01
 rules:
 - MATCH,PROXIES

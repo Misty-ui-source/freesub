@@ -11,6 +11,14 @@ proxies:
   type: trojan
   password: UX82473651
   sni: loved-shark.rooster465.autos
+  skip-cert-verify: true
+- name: 🇮🇪 爱尔兰 (Ireland) 02
+  server: sacred-anemone.rooster465.autos
+  port: 443
+  udp: true
+  type: trojan
+  password: UX82473651
+  sni: sacred-anemone.rooster465.autos
   skip-cert-verify: false
 proxy-groups:
 - name: PROXIES
@@ -18,11 +26,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇮🇪 爱尔兰 (Ireland) 01
+  - 🇮🇪 爱尔兰 (Ireland) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇮🇪 爱尔兰 (Ireland) 01
+  - 🇮🇪 爱尔兰 (Ireland) 02
 rules:
 - MATCH,PROXIES
