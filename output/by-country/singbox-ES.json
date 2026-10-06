@@ -4,26 +4,20 @@
   },
   "outbounds": [
     {
-      "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 01",
-      "server": "104.18.47.113",
-      "server_port": 8080,
-      "uuid": "47fcef29-ab4e-4aa6-932b-d95a18f28a4e",
-      "transport": {
-        "type": "ws",
-        "path": "/?ed=2560security=tls",
-        "headers": {
-          "Host": "8nj2r.2k8t.f88.hh.vavava.kdns.fr"
-        }
-      }
-    },
-    {
       "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 02",
+      "tag": "🇪🇸 西班牙 (Spain) 01",
       "server": "108.181.121.226",
       "server_port": 8388,
       "method": "chacha20-ietf-poly1305",
       "password": "WSyL4XTwNsdv"
+    },
+    {
+      "type": "shadowsocks",
+      "tag": "🇪🇸 西班牙 (Spain) 02",
+      "server": "140.174.184.5",
+      "server_port": 8388,
+      "method": "chacha20-ietf-poly1305",
+      "password": "qItG8SueYQcP"
     },
     {
       "type": "vless",
@@ -36,7 +30,7 @@
         "server_name": "www.apple.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "firefox"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -46,20 +40,8 @@
       }
     },
     {
-      "type": "hysteria2",
-      "tag": "🇪🇸 西班牙 (Spain) 04",
-      "server": "xby.mangshe.xyz",
-      "server_port": 2060,
-      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
-      "tls": {
-        "enabled": true,
-        "server_name": "xby.mangshe.xyz",
-        "insecure": true
-      }
-    },
-    {
       "type": "vless",
-      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "tag": "🇪🇸 西班牙 (Spain) 04",
       "server": "193.238.154.5",
       "server_port": 443,
       "uuid": "e0b9fb0f-1bbd-478b-9580-c2294778338b",
@@ -78,12 +60,16 @@
       }
     },
     {
-      "type": "shadowsocks",
-      "tag": "🇪🇸 西班牙 (Spain) 06",
-      "server": "140.174.184.5",
-      "server_port": 8388,
-      "method": "chacha20-ietf-poly1305",
-      "password": "qItG8SueYQcP"
+      "type": "hysteria2",
+      "tag": "🇪🇸 西班牙 (Spain) 05",
+      "server": "xby.mangshe.xyz",
+      "server_port": 2060,
+      "password": "5d0a6445-a30d-4522-bb1f-94f1d3ad63be",
+      "tls": {
+        "enabled": true,
+        "server_name": "xby.mangshe.xyz",
+        "insecure": true
+      }
     },
     {
       "type": "selector",
@@ -94,8 +80,7 @@
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
         "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05",
-        "🇪🇸 西班牙 (Spain) 06"
+        "🇪🇸 西班牙 (Spain) 05"
       ]
     },
     {
@@ -106,8 +91,7 @@
         "🇪🇸 西班牙 (Spain) 02",
         "🇪🇸 西班牙 (Spain) 03",
         "🇪🇸 西班牙 (Spain) 04",
-        "🇪🇸 西班牙 (Spain) 05",
-        "🇪🇸 西班牙 (Spain) 06"
+        "🇪🇸 西班牙 (Spain) 05"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
