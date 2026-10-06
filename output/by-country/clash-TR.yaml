@@ -5,26 +5,18 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇹🇷 土耳其 (Turkey) 01
-  server: trn32.mobileemdad.top
-  port: 443
+  server: cookie.wookshop.ir
+  port: 43233
   udp: true
   type: vless
-  uuid: 11a1238e-348b-47c7-ac36-47ed50dd911c
-  flow: xtls-rprx-vision
-  tls: true
-  reality-opts:
-    public-key: PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ
-    short-id: 9ed2fa
-  servername: delivery.mp.microsoft.com
-  client-fingerprint: edge
-- name: 🇹🇷 土耳其 (Turkey) 02 R50
-  server: test.keoplentuio.xyz
-  port: 2053
-  udp: true
-  type: vless
-  uuid: 9ef61079-6f7d-4911-9608-943da85d8e6f
-- name: 🇹🇷 土耳其 (Turkey) 03
-  server: 104.21.48.18
+  uuid: 568bcbbc-7a90-4164-8b5d-1c0bbeccfa38
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: cookie.wookshop.ir
+- name: 🇹🇷 土耳其 (Turkey) 02
+  server: nimm.mpd.cc.cd
   port: 2053
   udp: true
   type: trojan
@@ -40,15 +32,13 @@ proxy-groups:
   proxies:
   - AUTO
   - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02 R50
-  - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 02
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
   - 🇹🇷 土耳其 (Turkey) 01
-  - 🇹🇷 土耳其 (Turkey) 02 R50
-  - 🇹🇷 土耳其 (Turkey) 03
+  - 🇹🇷 土耳其 (Turkey) 02
 rules:
 - MATCH,PROXIES

@@ -6,55 +6,31 @@
     {
       "type": "vless",
       "tag": "🇹🇷 土耳其 (Turkey) 01",
-      "server": "trn32.mobileemdad.top",
-      "server_port": 443,
-      "uuid": "11a1238e-348b-47c7-ac36-47ed50dd911c",
-      "flow": "xtls-rprx-vision",
-      "tls": {
-        "enabled": true,
-        "server_name": "delivery.mp.microsoft.com",
-        "utls": {
-          "enabled": true,
-          "fingerprint": "edge"
-        },
-        "reality": {
-          "enabled": true,
-          "public_key": "PjR-SM4fOm2fY4mTqWoqZDRyxontvpailM0gBqUxlUQ",
-          "short_id": "9ed2fa"
+      "server": "cookie.wookshop.ir",
+      "server_port": 43233,
+      "uuid": "568bcbbc-7a90-4164-8b5d-1c0bbeccfa38",
+      "transport": {
+        "type": "ws",
+        "path": "/",
+        "headers": {
+          "Host": "cookie.wookshop.ir"
         }
       }
     },
     {
-      "type": "vless",
-      "tag": "🇹🇷 土耳其 (Turkey) 02 R50",
-      "server": "test.keoplentuio.xyz",
-      "server_port": 2053,
-      "uuid": "9ef61079-6f7d-4911-9608-943da85d8e6f"
-    },
-    {
       "type": "trojan",
-      "tag": "🇹🇷 土耳其 (Turkey) 03",
-      "server": "104.21.48.18",
+      "tag": "🇹🇷 土耳其 (Turkey) 02",
+      "server": "nimm.mpd.cc.cd",
       "server_port": 2053,
       "password": "e309e031-991e-4656-9934-44d10deb8fd8",
       "tls": {
         "enabled": true,
         "server_name": "nimm.mpd.cc.cd",
-        "insecure": false,
-        "alpn": [
-          "h3h2http/1.1"
-        ],
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
+        "insecure": false
       },
       "transport": {
         "type": "ws",
-        "path": "/0962",
-        "headers": {
-          "Host": "nimm.mpd.cc.cd"
-        }
+        "path": "/0962"
       }
     },
     {
@@ -63,8 +39,7 @@
       "outbounds": [
         "auto",
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02 R50",
-        "🇹🇷 土耳其 (Turkey) 03"
+        "🇹🇷 土耳其 (Turkey) 02"
       ]
     },
     {
@@ -72,8 +47,7 @@
       "tag": "auto",
       "outbounds": [
         "🇹🇷 土耳其 (Turkey) 01",
-        "🇹🇷 土耳其 (Turkey) 02 R50",
-        "🇹🇷 土耳其 (Turkey) 03"
+        "🇹🇷 土耳其 (Turkey) 02"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },

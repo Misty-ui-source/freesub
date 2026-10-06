@@ -5,27 +5,19 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇷🇺 俄罗斯 (Russia) 01
-  server: 130.49.189.158
-  port: 43558
-  udp: true
-  type: ss
-  cipher: chacha20-ietf-poly1305
-  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
-- name: 🇷🇺 俄罗斯 (Russia) 02
   server: 194.38.11.86
   port: 65443
   udp: true
   type: ss
   cipher: aes-256-cfb
   password: 7eadc6dbe2ae
-- name: 🇷🇺 俄罗斯 (Russia) 03
-  server: srv-17e124.21freedom.net
-  port: 11592
+- name: 🇷🇺 俄罗斯 (Russia) 02
+  server: 130.49.189.158
+  port: 43558
   udp: true
-  type: hysteria2
-  password: 41edb44c8e
-  sni: srv-17e124.21freedom.net
-  skip-cert-verify: true
+  type: ss
+  cipher: chacha20-ietf-poly1305
+  password: EKGHx2yhUzmnRONhNOxvn+BqUr10wfqDQqRg4DYUJE8=
 proxy-groups:
 - name: PROXIES
   type: select
@@ -33,7 +25,6 @@ proxy-groups:
   - AUTO
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -41,6 +32,5 @@ proxy-groups:
   proxies:
   - 🇷🇺 俄罗斯 (Russia) 01
   - 🇷🇺 俄罗斯 (Russia) 02
-  - 🇷🇺 俄罗斯 (Russia) 03
 rules:
 - MATCH,PROXIES
