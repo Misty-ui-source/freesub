@@ -4,31 +4,28 @@ allow-lan: true
 mode: rule
 log-level: info
 proxies:
-- name: 🇧🇾 白俄罗斯 (Belarus) 01
-  server: 89.125.96.93
-  port: 2053
+- name: 🇲🇾 马来西亚 (Malaysia) 01
+  server: platform102.golnamakcert.top
+  port: 80
   udp: true
   type: vless
-  uuid: 6c713691-3ca2-0008-ad25-113d1bed6b03
-  tls: true
-  servername: wss.zazazuza.ru
-  skip-cert-verify: false
+  uuid: e13cf851-b4fd-413b-8d49-146e6eb8e5d4
   network: ws
   ws-opts:
-    path: /vpn-wss/fluxor/59011/
+    path: /platform102
     headers:
-      Host: wss.zazazuza.ru
+      Host: platform102.golnamakcert.top
 proxy-groups:
 - name: PROXIES
   type: select
   proxies:
   - AUTO
-  - 🇧🇾 白俄罗斯 (Belarus) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
   interval: 300
   proxies:
-  - 🇧🇾 白俄罗斯 (Belarus) 01
+  - 🇲🇾 马来西亚 (Malaysia) 01
 rules:
 - MATCH,PROXIES
